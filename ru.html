@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Резюме Леонида Винниченко</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Подключим шрифт Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        background-color: #f3f3f3;
+        color: #333;
+      }
+      p,
+      ul {
+        line-height: 1.5;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      header img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      header .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      header .info h1 {
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+      header .info h2 {
+        margin: 5px 0;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #666;
+      }
+      .contact {
+        margin-top: 5px;
+        font-size: 0.95rem;
+        color: #444;
+      }
+      .section-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 5px;
+      }
+      .summary {
+        margin-bottom: 20px;
+      }
+      .location {
+        font-style: italic;
+        color: #777;
+      }
+
+      /* Работа */
+      .work-item {
+        margin-bottom: 20px;
+      }
+      .work-item h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      .work-item a {
+        color: #0077c2;
+        text-decoration: none;
+      }
+      .work-item a:hover {
+        text-decoration: underline;
+      }
+      .work-item .dates {
+        color: #999;
+        font-size: 0.9rem;
+        margin: 4px 0;
+      }
+      .highlights {
+        list-style: disc;
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+
+      /* Образование */
+      .education-item {
+        margin-bottom: 15px;
+      }
+      .education-item h4 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .education-item .dates {
+        color: #999;
+        font-size: 0.9rem;
+        margin: 4px 0;
+      }
+      .education-area {
+        color: #555;
+        margin-top: 2px;
+      }
+
+      /* Навыки */
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .skill {
+        background-color: #eee;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 0.9rem;
+      }
+
+      /* Профили */
+      .profile-list {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        gap: 20px;
+        margin-top: 8px;
+      }
+      .profile-list li {
+        font-size: 0.95rem;
+      }
+      .profile-list a {
+        color: #333;
+        text-decoration: none;
+      }
+      .profile-list a:hover {
+        text-decoration: underline;
+      }
+
+      /* Языки */
+      .languages-list {
+        margin-top: 10px;
+        list-style: none;
+        padding-left: 0;
+      }
+      .languages-list li {
+        margin-bottom: 5px;
+      }
+
+      @media print {
+        .page-break {
+          page-break-before: always;
+        }
+        .container {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="https://avatars.githubusercontent.com/u/2771713?s=400&u=f5ad655edcb5cc98e3d24b57856828cc5f9f9ac8&v=4"
+          alt="Леонид Винниченко"
+        />
+        <div class="info">
+          <h1>Леонид Винниченко</h1>
+          <h2>
+            Senior Frontend Engineer, Expert 3D Graphics Software Engineer
+          </h2>
+          <div class="contact">
+            <div>
+              Email: <a href="mailto:vinneyto@gmail.com">vinneyto@gmail.com</a>
+            </div>
+            <div>Телефон: +7(903)816-60-86</div>
+            <div class="location">Москва</div>
+          </div>
+          <ul class="profile-list">
+            <li>
+              <a href="https://t.me/vinneyto" target="_blank"
+                >Telegram: @vinneyto</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/vinneyto" target="_blank"
+                >GitHub: vinneyto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="summary">
+        <p>
+          <strong>Краткое описание:</strong> Разработчик с 10-летним опытом во
+          фронтенде и создании 3D-графики (WebGL/WebGPU) в браузере. Отвечаю за
+          архитектурные решения, проектирование систем рендеринга и координацию
+          командной работы, ориентируясь на высокую производительность и
+          качество кода.
+        </p>
+      </div>
+
+      <h2 class="section-title">Опыт работы</h2>
+
+      <div class="work-item">
+        <h3>
+          Expert 3D Graphics Software Engineer в
+          <a href="https://www.aligntech.com" target="_blank"
+            >Align Technology</a
+          >
+        </h3>
+        <div class="dates">Февраль 2024 – по настоящее время</div>
+        <p>
+          Разработчик и архитектор 3D-системы для веб-приложения
+          врачей-ортодонтов. Отвечаю за архитектурные решения и интеграцию
+          модулей, при этом контролирую качество кода и руковожу частью команды.
+        </p>
+        <ul class="highlights">
+          <li>
+            Принимаю архитектурные решения, контролирую соответствие кода
+            стандартам
+          </li>
+          <li>
+            Провожу регулярные <strong>code review</strong>, распределяю задачи
+            и направляю исполнителей
+          </li>
+          <li>
+            Согласовываю <strong>API</strong> взаимодействия с серверной частью,
+            обеспечивая эффективную двустороннюю коммуникацию
+          </li>
+          <li>
+            Использую <strong>WebGL</strong>/<strong>WebGPU</strong> для
+            высокопроизводительной <strong>3D-графики</strong>, пишу
+            пользовательские шейдеры
+          </li>
+          <li>
+            Спроектировал и реализовал систему
+            <strong>Effect Compositor</strong>, интегрировав её в
+            <strong>ECS</strong> (<strong>Entity-Component-System</strong>). Это
+            позволило значительно упростить создание сложных графических
+            эффектов и композитных сцен
+          </li>
+          <li>
+            Реализовал средства визуальной отладки, которые упрощают процесс
+            разработки и профилирования.
+          </li>
+        </ul>
+      </div>
+
+      <div class="work-item">
+        <h3>
+          Senior Software Engineer в
+          <a href="https://www.aligntech.com" target="_blank"
+            >Align Technology</a
+          >
+        </h3>
+        <div class="dates">Июль 2017 – Январь 2024</div>
+        <p>
+          Разработка 3D-редактора для ортодонтов (визуализация и редактирование
+          моделей челюстей). Внёс вклад в UI, инфраструктуру и поддержку
+          WebSocket-соединений.
+        </p>
+        <ul class="highlights page-break">
+          <li>
+            Разработка UI-компонентов на <strong>React</strong>, перевод проекта
+            с ES6 на <strong>TypeScript</strong>
+          </li>
+          <li>
+            Внедрение <strong>Redux</strong> для управления состоянием,
+            уменьшение технического долга
+          </li>
+          <li>Реализация runtime-генерации иконок (canvas 2D) для 3D-сцены</li>
+          <li>
+            Unit и интеграционные тесты (<strong>Jest</strong> + puppeteer)
+          </li>
+          <li>
+            Взаимодействие с бэкендом через
+            <strong>WebSocket</strong> (управление очередью сообщений,
+            мониторинг разрывов)
+          </li>
+          <li>
+            Настройка собственных материалов и шейдеров для
+            <strong>Three.js</strong>, работа с 3D-математикой
+          </li>
+        </ul>
+      </div>
+
+      <div class="work-item">
+        <h3>
+          Фронтенд-разработчик в
+          <a href="https://www.paragon-software.com" target="_blank"
+            >Paragon Software</a
+          >
+        </h3>
+        <div class="dates">Апрель 2015 – Июль 2017</div>
+        <p>
+          Разработка и поддержка личного кабинета в виде одностраничного
+          приложения (SPA).
+        </p>
+        <ul class="highlights">
+          <li>
+            Разработка на <strong>AngularJS</strong>, использование адаптивной
+            верстки
+          </li>
+          <li>Обмен данными с сервером через <strong>RESTful API</strong></li>
+          <li>Настройка сборки проекта с помощью <strong>Webpack</strong></li>
+          <li>
+            Разработка инструмента на <strong>Node.js</strong> для локализации
+            (Excel → JSON)
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="section-title">Навыки</h2>
+      <div class="skills-list">
+        <div class="skill">JavaScript</div>
+        <div class="skill">TypeScript</div>
+        <div class="skill">ES6</div>
+        <div class="skill">React</div>
+        <div class="skill">Redux</div>
+        <div class="skill">AngularJS</div>
+        <div class="skill">RxJS</div>
+        <div class="skill">WebGL</div>
+        <div class="skill">WebGPU</div>
+        <div class="skill">Three.js</div>
+        <div class="skill">Shaders</div>
+        <div class="skill">ECS</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">RESTful API</div>
+        <div class="skill">WebSocket</div>
+        <div class="skill">Webpack</div>
+        <div class="skill">Jest</div>
+        <div class="skill">Puppeteer</div>
+        <div class="skill">Playwright</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS/SASS</div>
+        <div class="skill">3D-математика</div>
+      </div>
+
+      <h2 class="section-title">Образование</h2>
+      <div class="education-item">
+        <h4>Российский Университет Дружбы Народов</h4>
+        <div class="dates">2006 – 2010</div>
+        <div class="education-area">Бакалавр по общей физике</div>
+      </div>
+      <div class="education-item">
+        <h4>Российский Университет Дружбы Народов</h4>
+        <div class="dates">2010 – 2012</div>
+        <div class="education-area">Магистр по общей физике</div>
+      </div>
+
+      <h2 class="section-title">Владение языками</h2>
+      <ul class="languages-list">
+        <li>Английский — Fluent</li>
+      </ul>
+    </div>
+  </body>
+</html>

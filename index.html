@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Leonid Vinichenko's Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Using Roboto font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        background-color: #f3f3f3;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        gap: 20px;
+      }
+      .tile {
+        width: 200px;
+        height: 200px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .tile:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="en.html" class="tile">English Resume</a>
+      <a href="ru.html" class="tile">Russian Resume</a>
+    </div>
+  </body>
+</html>

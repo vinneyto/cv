@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resume of Leonid Vinichenko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Using Roboto font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        background-color: #f3f3f3;
+        color: #333;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      header img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      header .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      header .info h1 {
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+      header .info h2 {
+        margin: 5px 0;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #666;
+      }
+      .contact {
+        margin-top: 5px;
+        font-size: 0.95rem;
+        color: #444;
+      }
+      .section-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 5px;
+      }
+      .summary {
+        margin-bottom: 20px;
+      }
+      .location {
+        font-style: italic;
+        color: #777;
+      }
+
+      /* Work */
+      .work-item {
+        margin-bottom: 20px;
+      }
+      .work-item h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      .work-item a {
+        color: #0077c2;
+        text-decoration: none;
+      }
+      .work-item a:hover {
+        text-decoration: underline;
+      }
+      .work-item .dates {
+        color: #999;
+        font-size: 0.9rem;
+        margin: 4px 0;
+      }
+      .highlights {
+        list-style: disc;
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+
+      /* Education */
+      .education-item {
+        margin-bottom: 15px;
+      }
+      .education-item h4 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .education-item .dates {
+        color: #999;
+        font-size: 0.9rem;
+        margin: 4px 0;
+      }
+      .education-area {
+        color: #555;
+        margin-top: 2px;
+      }
+
+      /* Skills */
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .skill {
+        background-color: #eee;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 0.9rem;
+      }
+
+      /* Profiles */
+      .profile-list {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        gap: 20px;
+        margin-top: 8px;
+      }
+      .profile-list li {
+        font-size: 0.95rem;
+      }
+      .profile-list a {
+        color: #333;
+        text-decoration: none;
+      }
+      .profile-list a:hover {
+        text-decoration: underline;
+      }
+
+      /* Languages */
+      .languages-list {
+        margin-top: 10px;
+        list-style: none;
+        padding-left: 0;
+      }
+      .languages-list li {
+        margin-bottom: 5px;
+      }
+
+      @media print {
+        .page-break {
+          page-break-before: always;
+        }
+        .container {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="https://avatars.githubusercontent.com/u/2771713?s=400&u=f5ad655edcb5cc98e3d24b57856828cc5f9f9ac8&v=4"
+          alt="Leonid Vinichenko"
+        />
+        <div class="info">
+          <h1>Leonid Vinichenko</h1>
+          <h2>
+            Senior Frontend Engineer, Expert 3D Graphics Software Engineer
+          </h2>
+          <div class="contact">
+            <div>
+              Email: <a href="mailto:vinneyto@gmail.com">vinneyto@gmail.com</a>
+            </div>
+            <div>Phone: +34 685 888 911</div>
+            <div class="location">Madrid</div>
+          </div>
+          <ul class="profile-list">
+            <li>
+              <a href="https://t.me/vinneyto" target="_blank"
+                >Telegram: @vinneyto</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/vinneyto" target="_blank"
+                >GitHub: vinneyto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="summary">
+        <p>
+          <strong>Summary:</strong> Developer with 10+ years of experience in
+          frontend and 3D graphics (WebGL/WebGPU) in the browser. Responsible
+          for architectural decisions, rendering system design, and team
+          coordination. Focused on high performance and code quality.
+        </p>
+      </div>
+
+      <h2 class="section-title">Work Experience</h2>
+
+      <div class="work-item">
+        <h3>
+          Expert 3D Graphics Software Engineer at
+          <a href="https://www.aligntech.com" target="_blank"
+            >Align Technology</a
+          >
+        </h3>
+        <div class="dates">February 2024 – Present</div>
+        <p>
+          Developer and architect of a 3D system for a web app used by
+          orthodontists. Oversee architectural decisions and module integration,
+          ensure code quality, and supervise part of the team.
+        </p>
+        <ul class="highlights">
+          <li>Drive architectural decisions and maintain coding standards</li>
+          <li>
+            Conduct regular code reviews, assign tasks, and mentor developers
+          </li>
+          <li>
+            Coordinate <strong>API</strong> interaction with the backend,
+            ensuring efficient two-way communication
+          </li>
+          <li>
+            Leverage <strong>WebGL</strong>/<strong>WebGPU</strong> for
+            high-performance <strong>3D graphics</strong>, writing custom
+            shaders
+          </li>
+          <li>
+            Designed and implemented an
+            <strong>Effect Compositor</strong> system, integrating it into the
+            <strong>ECS</strong> (<strong>Entity-Component-System</strong>).
+            This significantly streamlined the creation of complex graphical
+            effects and composite scenes.
+          </li>
+          <li>
+            Implemented visual debugging tools that simplify the development
+            process for junior engineers, accelerate feature delivery, and
+            significantly reduce bugs.
+          </li>
+        </ul>
+      </div>
+
+      <div class="work-item">
+        <h3>
+          Senior Software Engineer at
+          <a href="https://www.aligntech.com" target="_blank"
+            >Align Technology</a
+          >
+        </h3>
+        <div class="dates">July 2017 – January 2024</div>
+        <p>
+          Developed a 3D editor for orthodontists (visualizing and editing jaw
+          models). Contributed to UI, infrastructure, and WebSocket support.
+        </p>
+        <ul class="highlights">
+          <li>
+            Built UI components using <strong>React</strong>, migrated project
+            from ES6 to <strong>TypeScript</strong>
+          </li>
+          <li>
+            Introduced <strong>Redux</strong> for state management, reducing
+            technical debt
+          </li>
+          <li>
+            Implemented runtime icon generation with
+            <strong>canvas 2D</strong> for the 3D scene
+          </li>
+          <li>
+            Created unit and integration tests (<strong>Jest</strong> +
+            puppeteer)
+          </li>
+          <li>
+            Managed backend communication via
+            <strong>WebSocket</strong> (message queue, disconnection handling)
+          </li>
+          <li>
+            Configured custom materials and shaders for
+            <strong>Three.js</strong>, working with 3D math
+          </li>
+        </ul>
+      </div>
+
+      <div class="work-item">
+        <h3>
+          Frontend Developer at
+          <a href="https://www.paragon-software.com" target="_blank"
+            >Paragon Software</a
+          >
+        </h3>
+        <div class="dates">April 2015 – July 2017</div>
+        <p class="page-break">
+          Developed and maintained a single-page application (SPA) for the
+          personal account system.
+        </p>
+        <ul class="highlights">
+          <li>
+            Built the application with <strong>AngularJS</strong>, used
+            responsive design techniques
+          </li>
+          <li>
+            Exchanged data with the server via <strong>RESTful API</strong>
+          </li>
+          <li>Configured the build process using <strong>Webpack</strong></li>
+          <li>
+            Developed a <strong>Node.js</strong> tool for localization (Excel →
+            JSON)
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-list">
+        <div class="skill">JavaScript</div>
+        <div class="skill">TypeScript</div>
+        <div class="skill">ES6</div>
+        <div class="skill">React</div>
+        <div class="skill">Redux</div>
+        <div class="skill">AngularJS</div>
+        <div class="skill">RxJS</div>
+        <div class="skill">WebGL</div>
+        <div class="skill">WebGPU</div>
+        <div class="skill">Three.js</div>
+        <div class="skill">Shaders</div>
+        <div class="skill">ECS</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">RESTful API</div>
+        <div class="skill">WebSocket</div>
+        <div class="skill">Webpack</div>
+        <div class="skill">Jest</div>
+        <div class="skill">Puppeteer</div>
+        <div class="skill">Playwright</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS/SASS</div>
+        <div class="skill">3D Math</div>
+      </div>
+
+      <h2 class="section-title">Education</h2>
+      <div class="education-item">
+        <h4>Peoples' Friendship University of Russia (RUDN)</h4>
+        <div class="dates">2006 – 2010</div>
+        <div class="education-area">Bachelor's degree in General Physics</div>
+      </div>
+      <div class="education-item">
+        <h4>Peoples' Friendship University of Russia (RUDN)</h4>
+        <div class="dates">2010 – 2012</div>
+        <div class="education-area">Master's degree in General Physics</div>
+      </div>
+
+      <h2 class="section-title">Languages</h2>
+      <ul class="languages-list">
+        <li>English — Fluent</li>
+      </ul>
+    </div>
+  </body>
+</html>

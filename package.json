@@ -1,0 +1,13 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Resume HTML sources and HTML-to-PDF build script",
+  "scripts": {
+    "build:pdf": "node scripts/html-to-pdf.mjs"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.41.0"
+  }
+}
